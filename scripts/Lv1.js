@@ -53,6 +53,7 @@ console.log(starReturn(5));
 function isUpperCase(target_string){
     //String.substr(start, length) ：從指定的位置 start 截取 到 指定「長度」length 的字串。
     //String.substring(start, index) ：從指定的位置 start 到 指定「位置」index 的字串。
+    //target_string[0]也可直接取到字串字元
     //非正規式表達，以ASCII的編碼進行比較
     /*
     法1:
@@ -62,9 +63,8 @@ function isUpperCase(target_string){
     法2:
     if(target_string.charCodeAt(0) >= 65 && target_string.charCodeAt(0) <= 90){  
         return true;
-    }
-    */
-
+    }*/
+    
     //正規式表達     /^[A-Z]+$/.test(字串)
     if(/^[A-Z]+$/.test(target_string.substring(0,1))){
         return true;
@@ -72,6 +72,7 @@ function isUpperCase(target_string){
     else{
         return false;
     }
+    
 }
 
 console.log(isUpperCase('abcd'));
