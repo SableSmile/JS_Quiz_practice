@@ -95,7 +95,7 @@ function winner(input_array){
     console.log(target_array);
     //判斷是否有空值
     for(i = 0; i < target_array.length; i++){        
-        if(target_array[i] == ''){
+        if(target_array[i] === ''){
             return 'draw';
         }        
     }
@@ -103,22 +103,22 @@ function winner(input_array){
         //判斷勝負
         switch(i){
             case 0:
-                if(target_array[i] == target_array[i+1] && target_array[i] == target_array[i+2]){
-                    if(target_array[i] == 'O'){
+                if(target_array[i] === target_array[i+1] && target_array[i] === target_array[i+2]){
+                    if(target_array[i] === 'O'){
                         return 'O';
                     }
                     else
                         return'X';
                 }
-                else if(target_array[i] == target_array[i+3] && target_array[i] == target_array[i+6]){
-                    if(target_array[i] == 'O'){
+                else if(target_array[i] === target_array[i+3] && target_array[i] === target_array[i+6]){
+                    if(target_array[i] === 'O'){
                         return 'O';
                     }
                     else
                         return'X';
                 }
-                else if(target_array[i] == target_array[i+4] && target_array[i] == target_array[i+8]){
-                    if(target_array[i] == 'O'){
+                else if(target_array[i] === target_array[i+4] && target_array[i] === target_array[i+8]){
+                    if(target_array[i] === 'O'){
                         return 'O';
                     }
                     else
@@ -128,8 +128,8 @@ function winner(input_array){
                     status = 'draw';
                 }
             case 1:
-                if(target_array[i] == target_array[i+3] && target_array[i] == target_array[i+6]){
-                    if(target_array[i] == 'O'){
+                if(target_array[i] === target_array[i+3] && target_array[i] === target_array[i+6]){
+                    if(target_array[i] === 'O'){
                         return 'O';
                     }
                     else
@@ -139,8 +139,8 @@ function winner(input_array){
                     status = 'draw';
                 }
             case 2:
-                if(target_array[i] == target_array[i+2] && target_array[i] == target_array[i+4]){
-                    if(target_array[i] == 'O'){
+                if(target_array[i] === target_array[i+2] && target_array[i] === target_array[i+4]){
+                    if(target_array[i] === 'O'){
                         return 'O';
                     }
                     else
