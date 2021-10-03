@@ -85,7 +85,7 @@ function position(target_string){
         if(target_string.substring(i, i+1) >= 'A' && target_string.substring(i, i+1) <= 'Z'){  
             //charAt() 取字串中的一個字 index 索引指標從 0 算起、如果參數 index 不在 0 與字串長度之間，將返回一個空字串。
             console.log(target_string.charAt(i),i); 
-            hasUpperCase=true      
+            hasUpperCase = true;      
             break;      
         }
     }    
